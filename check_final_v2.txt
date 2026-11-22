@@ -9,9 +9,10 @@ File: export_final_v2.zip
   [ERROR] S07_rgb.png: child_seat: occupied='yes' không hợp lệ (cho phép: unknown, no)
 Kết quả: 6 lỗi, 1 cảnh báo. Cảnh báo cần bạn tự xét, không tự động là sai.
 
---- Giải thích lỗi/cảnh báo còn lại (Nguyễn Duy Khánh · 2A202603055 · G03 · bản v2 sau review chéo với Loan) ---
-[ERROR] occupied='yes' ở S01_ir, S01_rgb, S04_ir, S04_rgb, S07_ir, S07_rgb: coach cho phép thêm giá trị child_seat.occupied = yes ngày 21/11/2026 (ngoài Guideline Cabin v1.0 §4.1). cabin_check bản repo chưa cập nhật nên vẫn báo lỗi. Không sửa script/XML (RULES §4). Bản đối chiếu tools/cabin_check_coach.py: 0 lỗi (check_final_v2_coach.txt).
-[WARN] D05.png left_eye_outer nằm bên trái ảnh: luật so trục x dành cho mặt nhìn thẳng; ảnh D## xoay 90° (CHECKPOINTS, Checkpoint B). Kiểm theo trục y: left_eye_* y = 607–665 > right_eye_* y = 522–558; mí trên x lớn hơn mí dưới: đúng → gán đúng quy ước.
+--- Giải thích lỗi/cảnh báo còn lại (Nguyễn Duy Khánh · 2A202603055 · G03 · bản v2 sau review chéo với Lê Ngọc Bích Loan) ---
+[ERROR] occupied='yes' ở S01_ir, S01_rgb, S04_ir, S04_rgb, S07_ir, S07_rgb: coach cho phép thêm giá trị child_seat.occupied = yes ngày 21/11/2026 và xác nhận lại tối 22/11 (ngoài Guideline Cabin v1.0 §4.1). cabin_check bản repo chưa cập nhật nên vẫn báo lỗi. Không sửa script/XML (RULES §4). Bản đối chiếu tools/cabin_check_coach.py: 0 lỗi (check_final_v2_coach.txt).
+[WARN] D05.png left_eye_outer nằm bên trái ảnh: luật so trục x dành cho mặt nhìn thẳng; ảnh D## xoay 90° (CHECKPOINTS, Checkpoint B). Kiểm theo trục y: left_eye_* y = 607–665 > right_eye_* y = 522–558; mí trên x lớn hơn mí dưới → gán đúng quy ước.
 [Ghi chú] S01_rgb không có box object ở rear_middle trong khi S01_ir có: ảnh RGB quá tối/mờ không thấy túi, không suy từ ảnh IR (GUIDE §4.4-1).
-[Ghi chú] D02: mặt quay đi, không thấy mắt lẫn mũi → không vẽ box face và face13 (GUIDE §4.5, §4.6). Sửa sau review chéo (disagreement_log.csv).
-[Thay đổi v1 → v2] Theo review chéo: D02 xoá face + thêm tay phải; D03/D06 mắt trái bỏ cờ, mắt phải chỉ giữ outside; D01/D04 điểm miệng → occluded; D04 on_wheel=no, gaze=other; D05 gaze=other, seatbelt=worn_correct. Giữ S05/S06 facing=rear, D03 eye_left=open.
+[Ghi chú] D02: mặt quay đi, không thấy mắt lẫn mũi → không vẽ box face và face13 (GUIDE §4.5, §4.6).
+[Thay đổi v1 → v2] Theo review chéo vòng 1–2: D02 xoá face + thêm tay phải; D03/D06 mắt trái bỏ cờ, mắt phải chỉ giữ outside; D01/D04 điểm miệng → occluded; D04 on_wheel=no, gaze=other; D05 gaze=other, seatbelt=worn_correct. Giữ S05/S06 facing=rear, D03 eye_left=open.
+[Cập nhật sau QC của Loan, 22/11 23:53] Siết box child_seat S05_rgb (mép phải 899 → 845) và object S04_ir (379 → 320); chỉnh box tay phải D02, box face D04, box face S02_rgb/S02_ir. Export lại và giữ tên export_final_v2.zip theo SUBMISSION.
