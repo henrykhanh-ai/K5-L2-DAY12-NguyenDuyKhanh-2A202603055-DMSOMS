@@ -4,14 +4,17 @@ Mã bộ ảnh: **G03** · Hình thức: **cá nhân** (coach ghép review chéo
 
 | Họ tên | MSSV | Đã gán đủ 22 ảnh? | Review chéo với (peer diff) | Số dòng disagreement đã xử lý |
 |---|---|---|---|---|
-| Nguyễn Duy Khánh | 2A202603055 | có (thêm 4 ảnh mở rộng S09–S10) | Loan (cùng mã G03) | 31/44 (còn 13 dòng `ambiguous`) |
+| Nguyễn Duy Khánh | 2A202603055 | có (thêm 4 ảnh mở rộng S09–S10) | Lê Ngọc Bích Loan (cùng mã G03) | 31/44 (còn 13 dòng `ambiguous`) |
 
 Ca hai bạn vẫn không thống nhất và đã hỏi / cần hỏi coach (ghi tên ảnh + đối tượng):
 
 - G03 S05, S06 · `infant_seat.facing`: mình giữ `rear`, Loan ghi `front`.
 - G03 D03 · `face.eye_left`: mình thấy khe mắt trái (`open`), Loan ghi `unknown`.
 - G03 D06 · cờ 4 điểm mắt phải trong `face13`: mình `outside`, Loan `occluded`.
-- G03 S01, S04, S07 · `child_seat.occupied = yes` (coach cho thêm giá trị ngoài Guideline v1.0 ngày 21/11/2026).
+- G03 S01, S04, S07 · `child_seat.occupied = yes` (coach cho thêm giá trị ngoài Guideline v1.0 ngày 21/11/2026; Loan báo coach xác nhận lại tối 22/11).
+- G03 S01, S04, S07 · `child_seat` có vật bên trong thì `occupied` ghi `no` hay `unknown` (Loan đề xuất hỏi).
+
+Kết luận QC của Loan trên `export_final_v2.zip` (22/11): **Cần xác minh** — không có lỗi đã xác nhận; còn các bất đồng `ambiguous` cần xem ảnh (D03 mắt trái, D06 cờ mắt phải, D01 mouth_left, D02 box tay phải, S05/S06 facing, S02 thuộc tính face).
 
 ## Cá nhân
 
