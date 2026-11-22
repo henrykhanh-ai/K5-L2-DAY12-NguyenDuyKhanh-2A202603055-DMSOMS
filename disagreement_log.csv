@@ -1,0 +1,45 @@
+﻿image,label,field,issue,mine,peer,verdict,guideline_rule,action
+D01.png,face13,mouth_left.occluded,khác cờ,0,1,peer,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",Đổi sang occluded: điểm bị che nhưng ước được vị trí (§4.6)
+D01.png,face13,mouth_left.outside,khác cờ,1,0,peer,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",Đổi sang occluded: điểm bị che nhưng ước được vị trí (§4.6)
+D01.png,face13,mouth_right.occluded,khác cờ,0,1,peer,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",Đổi sang occluded: điểm bị che nhưng ước được vị trí (§4.6)
+D01.png,face13,mouth_right.outside,khác cờ,1,0,peer,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",Đổi sang occluded: điểm bị che nhưng ước được vị trí (§4.6)
+D01.png,face13,lip_upper.occluded,khác cờ,0,1,peer,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",Đổi sang occluded: điểm bị che nhưng ước được vị trí (§4.6)
+D01.png,face13,lip_upper.outside,khác cờ,1,0,peer,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",Đổi sang occluded: điểm bị che nhưng ước được vị trí (§4.6)
+D01.png,face13,lip_lower.occluded,khác cờ,0,1,peer,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",Đổi sang occluded: điểm bị che nhưng ước được vị trí (§4.6)
+D01.png,face13,lip_lower.outside,khác cờ,1,0,peer,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",Đổi sang occluded: điểm bị che nhưng ước được vị trí (§4.6)
+D02.png,face,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,peer,4.5 (không thấy cả mắt lẫn mũi thì không vẽ box face),"Đã xoá box face D02 (mặt quay đi, không thấy mắt/mũi)"
+D02.png,hand,box,chỉ có ở peer (hoặc IoU thấp),,,peer,4.2 (mỗi bàn tay thấy được một box),Đã vẽ thêm tay phải tài xế D02
+D03.png,face,eye_left,khác giá trị (IoU=0.80),open,unknown,mine,4.5 + 4.4-2 (mắt trái theo người; open khi thấy khe mắt),"Giữ eye_left=open: thấy khe mắt trái, đang nhìn đường"
+D03.png,face13,left_eye_outer.occluded,khác cờ,0,1,mine,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",Mắt trái thấy rõ → 4 điểm left_eye không bật cờ
+D03.png,face13,left_eye_inner.occluded,khác cờ,0,1,mine,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",Mắt trái thấy rõ → 4 điểm left_eye không bật cờ
+D03.png,face13,left_eye_upper.occluded,khác cờ,0,1,mine,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",Mắt trái thấy rõ → 4 điểm left_eye không bật cờ
+D03.png,face13,left_eye_lower.occluded,khác cờ,0,1,mine,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",Mắt trái thấy rõ → 4 điểm left_eye không bật cờ
+D03.png,face13,right_eye_outer.occluded,khác cờ,1,0,peer,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",Mắt phải không thấy: chỉ giữ 1 cờ outside (mine trước bật cả 2 cờ)
+D03.png,face13,right_eye_inner.occluded,khác cờ,1,0,peer,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",Mắt phải không thấy: chỉ giữ 1 cờ outside (mine trước bật cả 2 cờ)
+D03.png,face13,right_eye_upper.occluded,khác cờ,1,0,peer,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",Mắt phải không thấy: chỉ giữ 1 cờ outside (mine trước bật cả 2 cờ)
+D03.png,face13,right_eye_lower.occluded,khác cờ,1,0,peer,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",Mắt phải không thấy: chỉ giữ 1 cờ outside (mine trước bật cả 2 cờ)
+D03.png,face13,mouth_left.occluded,khác cờ,0,1,ambiguous,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",Chưa chốt với bạn — hỏi coach / xem lại
+D03.png,face13,mouth_right.outside,khác cờ,1,0,ambiguous,"4.6 (mỗi điểm một cờ: occluded nếu đoán chắc vị trí, outside nếu không)",Chưa chốt với bạn — hỏi coach / xem lại
+D03.png,face13,lip_upper.occluded,khác cờ,0,1,ambiguous,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",Chưa chốt với bạn — hỏi coach / xem lại
+D04.png,hand,on_wheel,khác giá trị (IoU=0.84),unknown,no,peer,4.7 on_wheel (unknown khi không thấy rõ),Đổi on_wheel=no: thấy rõ tay không chạm vô lăng
+D04.png,face,gaze_zone,khác giá trị (IoU=0.63),road,other,peer,4.5 gaze_zone (không chắc thì other),Đổi gaze_zone=other: không chắc vùng nhìn
+D04.png,face13,mouth_left.outside,khác cờ,1,0,peer,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",Đổi sang occluded: điểm bị che nhưng ước được vị trí (§4.6)
+D04.png,face13,mouth_right.outside,khác cờ,1,0,peer,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",Đổi sang occluded: điểm bị che nhưng ước được vị trí (§4.6)
+D04.png,face13,lip_upper.outside,khác cờ,1,0,peer,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",Đổi sang occluded: điểm bị che nhưng ước được vị trí (§4.6)
+D04.png,face13,lip_lower.outside,khác cờ,1,0,peer,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",Đổi sang occluded: điểm bị che nhưng ước được vị trí (§4.6)
+D05.png,face,gaze_zone,khác giá trị (IoU=0.77),road,other,peer,4.5 gaze_zone (không chắc thì other),Đổi gaze_zone=other: không chắc vùng nhìn
+D05.png,person,seatbelt,khác giá trị (IoU=0.79),worn_incorrect,worn_correct,peer,4.7 seatbelt,Đổi seatbelt=worn_correct sau khi xem lại dây
+D06.png,face,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.44,,ambiguous,"4.1 face trán–cằm, tai–tai; 4.4-5 hộp sát",Chưa chốt với bạn — hỏi coach / xem lại
+D06.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,ambiguous,"4.1 face trán–cằm, tai–tai; 4.4-5 hộp sát",Chưa chốt với bạn — hỏi coach / xem lại
+D06.png,face13,right_eye_outer.outside,khác cờ,1,0,ambiguous,"4.6 (mỗi điểm một cờ: occluded nếu đoán chắc vị trí, outside nếu không)",Chưa chốt với bạn — hỏi coach / xem lại
+D06.png,face13,right_eye_inner.outside,khác cờ,1,0,ambiguous,"4.6 (mỗi điểm một cờ: occluded nếu đoán chắc vị trí, outside nếu không)",Chưa chốt với bạn — hỏi coach / xem lại
+D06.png,face13,right_eye_upper.outside,khác cờ,1,0,ambiguous,"4.6 (mỗi điểm một cờ: occluded nếu đoán chắc vị trí, outside nếu không)",Chưa chốt với bạn — hỏi coach / xem lại
+D06.png,face13,right_eye_lower.outside,khác cờ,1,0,ambiguous,"4.6 (mỗi điểm một cờ: occluded nếu đoán chắc vị trí, outside nếu không)",Chưa chốt với bạn — hỏi coach / xem lại
+S02_ir.png,face,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.36,,ambiguous,"4.1 face trán–cằm, tai–tai; 4.4-5 hộp sát",Chưa chốt với bạn — hỏi coach / xem lại
+S02_ir.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,ambiguous,"4.1 face trán–cằm, tai–tai; 4.4-5 hộp sát",Chưa chốt với bạn — hỏi coach / xem lại
+S02_rgb.png,face,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.36,,ambiguous,"4.1 face trán–cằm, tai–tai; 4.4-5 hộp sát",Chưa chốt với bạn — hỏi coach / xem lại
+S02_rgb.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,ambiguous,"4.1 face trán–cằm, tai–tai; 4.4-5 hộp sát",Chưa chốt với bạn — hỏi coach / xem lại
+S05_ir.png,infant_seat,facing,khác giá trị (IoU=0.98),rear,front,mine,"4.1 facing theo xe: lòng nôi mở về camera (trước xe) = front, quay ra sau = rear",Giữ facing=rear: lòng nôi quay ra sau xe
+S05_rgb.png,infant_seat,facing,khác giá trị (IoU=0.99),rear,front,mine,"4.1 facing theo xe: lòng nôi mở về camera (trước xe) = front, quay ra sau = rear",Giữ facing=rear: lòng nôi quay ra sau xe
+S06_ir.png,infant_seat,facing,khác giá trị (IoU=0.99),rear,front,mine,"4.1 facing theo xe: lòng nôi mở về camera (trước xe) = front, quay ra sau = rear",Giữ facing=rear: lòng nôi quay ra sau xe
+S06_rgb.png,infant_seat,facing,khác giá trị (IoU=0.91),rear,front,mine,"4.1 facing theo xe: lòng nôi mở về camera (trước xe) = front, quay ra sau = rear",Giữ facing=rear: lòng nôi quay ra sau xe

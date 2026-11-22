@@ -26,5 +26,5 @@ Dùng để chép vào `self_review.md` / cuối `check_final.txt` khi nộp. G�
 
 | Ảnh | Đối tượng | Vấn đề | Tạm gán | Trạng thái |
 |---|---|---|---|---|
-| D02 | face13 | Mặt quay đi, không đặt được điểm nào | Chỉ box `face` (eye/glasses theo thấy được), xoá `face13` (GUIDE §4.6: không đặt điểm "cho đủ") | đã xử lý |
+| D02 | face13 | Mặt quay đi, không đặt được điểm nào | Không vẽ box `face` lẫn `face13` (không thấy mắt và mũi — GUIDE §4.5, §4.6); sửa ở v2 sau review chéo | đã xử lý |
 | (điền) | infant_seat có em bé | `infant_seat` không có thuộc tính `occupied` | 1 box `infant_seat`, không vẽ `person` | chờ coach |
