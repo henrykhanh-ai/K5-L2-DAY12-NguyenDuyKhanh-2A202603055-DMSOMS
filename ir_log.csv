@@ -1,0 +1,7 @@
+﻿frame_id,source,phenomenon,affected_field,effect_on_label
+S01_ir,IR_sim,"Túi đặt ở ghế giữa hiện rõ dưới đèn đỏ của ảnh IR mô phỏng; ảnh RGB cùng cảnh tối/mờ, không thấy túi",object (rear_middle),"IR có box object type=bag; RGB không vẽ vì không thấy, không chép từ ảnh IR (GUIDE §4.4-1)"
+D01,real_IR,"Tài xế đeo kính trong; trên ảnh NIR không thấy được khe mắt phải, mắt trái vẫn thấy rõ",eye_right + face13 right_eye_*,"eye_right = unknown, 4 điểm right_eye_* bật outside; không ghi closed"
+D03,real_IR,"Đeo kính trong; vùng mắt phải không thấy khe mắt trên ảnh NIR, mắt trái thấy rõ đang nhìn đường",eye_right + face13 right_eye_*,"eye_right = unknown, điểm mắt phải outside; eye_left giữ open (gán riêng từng mắt)"
+D05,real_IR,Đeo kính trong; cả hai mắt không phân biệt được khe mắt trên ảnh NIR,"eye_left, eye_right + face13","cả hai mắt unknown, điểm mắt bật occluded (ước được vị trí); không ghi closed"
+D06,real_IR,"Đeo kính trong; mắt phải không thấy khe mắt trên ảnh NIR, mắt trái thấy rõ",eye_right + face13 right_eye_*,"eye_right = unknown, 4 điểm right_eye_* bật outside"
+D02,real_IR,Đầu tài xế quay đi; ảnh NIR không thấy cả mắt lẫn mũi,"face, face13","không vẽ box face và face13 (GUIDE §4.5, §4.6); vẫn vẽ person và 2 tay"
